@@ -1,10 +1,145 @@
-  client
-  contracts
-  database
-  docs
-  infrastructure
-  ml
-* main
-  scripts
-  services
-  tests
+
+# ==========================================
+# Environment variables and secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+secrets/
+secrets.*
+
+# ==========================================
+# Node.js / React / Vite / NestJS / pnpm
+# ==========================================
+node_modules/
+.pnpm-store/
+.npm/
+.turbo/
+.parcel-cache/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+
+# ==========================================
+# Python / FastAPI / Machine Learning
+# ==========================================
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.ipynb_checkpoints/
+*.egg-info/
+wheels/
+
+# Python packaging
+build/
+dist/
+
+# ==========================================
+# Machine Learning artifacts
+# ==========================================
+ml/runs/
+ml/outputs/
+ml/checkpoints/
+ml/logs/
+ml/tensorboard/
+ml/wandb/
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.h5
+*.keras
+*.tflite
+
+# Large datasets - adjust if needed
+ml/datasets/
+ml/data/raw/
+ml/data/processed/
+
+# ==========================================
+# Java / Spring Boot / Maven / Gradle
+# ==========================================
+target/
+.gradle/
+.gradle-cache/
+!gradle/wrapper/gradle-wrapper.jar
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+# ==========================================
+# Databases and local data
+# ==========================================
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.bak
+*.backup
+database/data/
+database/backups/
+database/local/
+
+# ==========================================
+# Docker / logs / runtime files
+# ==========================================
+*.log
+logs/
+tmp/
+temp/
+.pid
+*.pid
+*.seed
+*.pid.lock
+
+# ==========================================
+# IDEs and editors
+# ==========================================
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+*.swo
+*~
+
+# ==========================================
+# Operating systems
+# ==========================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# Test reports
+# ==========================================
+test-results/
+playwright-report/
+.nyc_output/
+
+# ==========================================
+# Local configuration
+# ==========================================
+*.local
+docker-compose.override.yml
