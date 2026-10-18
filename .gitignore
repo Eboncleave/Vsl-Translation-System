@@ -1,0 +1,10 @@
+  client
+  contracts
+  database
+  docs
+  infrastructure
+  ml
+* main
+  scripts
+  services
+  tests
